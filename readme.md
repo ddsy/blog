@@ -16,6 +16,8 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 
 ## 开始
 npm install
+
 gulp watch
+
 php artisan serve --host=0.0.0.0
 
