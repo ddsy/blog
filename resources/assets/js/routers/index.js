@@ -3,26 +3,29 @@
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Room from '../components/Room.vue'
-import App from '../components/App.vue'
-import Console from '../views/Console.vue'
-import Login from '../views/Login.vue'
-import ConsoleIndex from '../components/ConsoleIndex.vue'
+
 Vue.use(VueRouter)
+
+const App = () => System.import('../components/App.vue')
+const Room = () => System.import('../components/Room.vue')
+const ConsoleIndex = () => System.import('../components/ConsoleIndex.vue')
+const Console = () => System.import('../views/Console.vue')
+const Login = () => System.import('../views/Login.vue')
 
 const router = new VueRouter({
     // mode: 'history',
-    base: __dirname,
+    // base: __dirname,
     routes: [
-        {path: '/', component: App},
+        {path: '/', redirect: 'login'},
         {path: '/login', component: Login},
         {
             path: '/admin',
             component: Console,
             children: [
-                {path: '', component: ConsoleIndex },
-                {path: 'index/a', component: ConsoleIndex },
-                {path: 'rooms', component: Room}
+                {path: '', redirect: 'index' },
+                {path: 'index', component: ConsoleIndex },
+                {path: 'rooms', component: Room},
+                {path: 'shops', component: App},
             ]
         }
     ]

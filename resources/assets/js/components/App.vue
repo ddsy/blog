@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div>
         <h1><img src="../../img/circle.png"/>Shopping Cart Example</h1>
         <hr>
         <h2>Products</h2>

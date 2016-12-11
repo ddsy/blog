@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>管理系统</title>
-    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="{{ elixir('css/app.css') }}">
 </head>
 <body>
 
@@ -12,6 +12,6 @@
     </transition>
 </div>
 
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ elixir('js/app.js') }}"></script>
 </body>
 </html>

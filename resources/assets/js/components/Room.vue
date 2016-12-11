@@ -1,18 +1,9 @@
 <template>
     <div>
-        <h3>Rooms List</h3>
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Room Name</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="room in rooms">
-                <td> {{ room.name }}</td>
-            </tr>
-            </tbody>
-        </table>
+        <h2>房间列表</h2>
+        <el-table :data="rooms" style="width: 100%">
+            <el-table-column prop="name" label="名称"></el-table-column>
+        </el-table>
     </div>
 </template>
 <style lang="sass" scoped>
