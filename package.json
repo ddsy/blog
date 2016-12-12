@@ -3,7 +3,7 @@
   "scripts": {
     "prod": "npm run clean && gulp --production",
     "dev": "npm run clean && gulp watch",
-    "clean": "rimraf public/css public/fonts public/iconfont public/img  public/js  public/build"
+    "clean": "rimraf public/css public/fonts public/img  public/js  public/build"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -17,6 +17,7 @@
     "jquery": "^3.1.0",
     "laravel-elixir": "^6.0.0-9",
     "laravel-elixir-browsersync-official": "^1.0.0",
+    "laravel-elixir-browsersync2": "^0.1.0",
     "laravel-elixir-vue-2": "^0.2.0",
     "laravel-elixir-webpack-official": "^1.0.2",
     "lodash": "^4.16.2",

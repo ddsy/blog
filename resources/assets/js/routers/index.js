@@ -11,6 +11,7 @@ const Room = () => System.import('../components/Room.vue')
 const ConsoleIndex = () => System.import('../components/ConsoleIndex.vue')
 const Console = () => System.import('../views/Console.vue')
 const Login = () => System.import('../views/Login.vue')
+const DataManage = () => System.import('../views/DataManage.vue')
 
 const router = new VueRouter({
     // mode: 'history',
@@ -19,13 +20,17 @@ const router = new VueRouter({
         {path: '/', redirect: 'login'},
         {path: '/login', component: Login},
         {
-            path: '/admin',
+            path: '/console',
             component: Console,
             children: [
-                {path: '', redirect: 'index' },
-                {path: 'index', component: ConsoleIndex },
-                {path: 'rooms', component: Room},
-                {path: 'shops', component: App},
+                {path: '', redirect: 'home'},
+                {path: 'home', component: ConsoleIndex},
+                {path: 'data', component: DataManage},
+                {path: 'behavior', component: Room},
+                {path: 'relation', component: ConsoleIndex},
+                {path: 'blackwhitelist', component: App},
+                {path: 'user', component: App},
+                {path: 'admin', component: App},
             ]
         }
     ]

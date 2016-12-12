@@ -1,6 +1,8 @@
 const elixir = require('laravel-elixir');
 const path = require('path');
 
+var BrowserSync = require('laravel-elixir-browsersync2');
+
 require('laravel-elixir-vue-2');
 
 /*
@@ -44,7 +46,6 @@ elixir(mix => {
     /*
     * 复制静态文件到编译目录
     * */
-    mix.copy('./resources/assets/iconfont', 'public/iconfont');
     mix.copy('./resources/assets/json', 'public/json');
     mix.copy('./node_modules/bootstrap-sass/assets/fonts', 'public/fonts');
 
@@ -55,8 +56,14 @@ elixir(mix => {
         mix.version(['css/app.css', 'js/app.js']);
     }
 
-    mix.browserSync({
-        notify: false,
-        proxy: 'http://0.0.0.0:8000'
+    BrowserSync.init();
+    mix.BrowserSync({
+        files: ['app/**/*', 'publick/**/*', 'resources/views/**/*'],
+        proxy: 'http://0.0.0.0:8000/',  // apache或iis等代理地址
+        port: 3000,
+        notify: false,        // 刷新是否提示
+        watchTask: true,
+        open: 'external',
+        host: 'localhost',  // 本机ip, 这样其他设备才可实时看到更新
     });
 });

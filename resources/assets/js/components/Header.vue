@@ -2,17 +2,25 @@
     <el-row>
         <el-col :span="20">
             <el-menu theme="dark" class="el-menu-demo" mode="horizontal">
-                <el-menu-item index="5"><i class="iconfont icon-list"></i>数据管理</el-menu-item>
+                <el-menu-item index="5"><i class="iconfont icon-list"></i>
+                    <router-link to="/console/data">数据管理</router-link>
+                </el-menu-item>
                 <el-menu-item index="1"><i class="iconfont icon-friend"></i>用户行为分析</el-menu-item>
-                <el-menu-item index="2"><i class="iconfont icon-share"></i>通连关系分析</el-menu-item>
+                <el-menu-item index="2"><i class="iconfont icon-share"></i>
+                    <router-link to="/console/relation">通连关系分析</router-link>
+                </el-menu-item>
                 <el-submenu index="3">
                     <template slot="title"><i class="iconfont icon-friendfill"></i>黑白名单</template>
-                    <el-menu-item index="3-1">监控</el-menu-item>
+                    <el-menu-item index="3-1">
+                        <router-link to="/console/shops">监控</router-link>
+                    </el-menu-item>
                     <el-menu-item index="3-2">名单管理</el-menu-item>
                 </el-submenu>
                 <el-submenu index="4">
                     <template slot="title"><i class="iconfont icon-addressbook"></i>用户信息</template>
-                    <el-menu-item index="4-1">查询</el-menu-item>
+                    <el-menu-item index="4-1">
+                        <router-link to="/console/rooms">查询</router-link>
+                    </el-menu-item>
                 </el-submenu>
                 <el-submenu index="6">
                     <template slot="title"><i class="iconfont icon-profile"></i>管理员</template>
@@ -36,14 +44,24 @@
         flex-direction: row-reverse;
         padding: 10px;
     }
-    a {
-        display: block;
-        width: 100%;
+
+    .el-menu-demo {
+        user-select: none;
+    }
+
+    .el-menu-item a {
+        color: inherit;
+        display: inline-block;
         height: 100%;
+        width: 100%;
+        text-decoration: none;
         &:hover, &:focus {
-           text-decoration: none;
-           color: red;
-        }
+                      text-decoration: none;
+                      color: red;
+                  }
+    }
+    .el-menu-item .router-link-active {
+        color: #20a0ff;
     }
 </style>
 

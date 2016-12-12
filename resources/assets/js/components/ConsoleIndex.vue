@@ -37,8 +37,6 @@
         },
         methods: {
             drawtree() {
-                const tree = this.$refs.tree;
-                console.log(tree);
                 let svg = d3.select(this.$refs.tree);
                 svg.attr('width', this.$refs.content.offsetWidth-20);
                 let width = +svg.attr("width");

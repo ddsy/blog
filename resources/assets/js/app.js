@@ -24,6 +24,7 @@ import ElementUI from 'element-ui';
 import router from './routers';
 import store from './stores'
 import 'element-ui/lib/theme-default/index.css';
+import '../iconfont/iconfont.css';
 
 // 1. Use plugin.
 // This installs <router-view> and <router-link>,

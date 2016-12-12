@@ -48,7 +48,7 @@
         border: 1px solid #9c9c9c;
         box-shadow: 0 0 10px #9c9c9c;
         padding: 20px;
-        background: #f0f2eb;
+        background: #e9f2e3;
     }
 
     .title {
@@ -229,7 +229,7 @@
                     }
                 });
 
-                this.$router.push('/admin');
+                this.$router.push('/console');
             }
         }
     }

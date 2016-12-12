@@ -2,7 +2,6 @@
     <div class="mainlayout">
         <my-header class="header"></my-header>
         <div class="main">
-            <my-slider></my-slider>
             <transition name="slide-fade">
                 <router-view class="view content"></router-view>
             </transition>
@@ -18,7 +17,7 @@
         transition: none;
     }
     .slide-fade-enter, .slide-fade-leave-active {
-        transform: translateX(30px);
+        transform: translateY(30px);
         opacity: 0;
     }
 
@@ -42,13 +41,11 @@
 </style>
 <script>
     import Header from '../components/Header.vue'
-    import Slider from '../components/Slider.vue'
     import Footer from '../components/Footer.vue'
 
     export default {
         components: {
             'my-header': Header,
-            'my-slider': Slider,
             'my-footer': Footer,
         }
     }
