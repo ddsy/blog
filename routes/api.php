@@ -16,6 +16,10 @@ use Illuminate\Http\Request;
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7454d322bcb67267d899f6531b1289114c9863d4
 // sample API
 Route::get('/rooms',function(){
     $data='[{"name":"a1","Number":"123"},{"name":"a1","Number":"123"},{"name":"a1","Number":"123"}]';

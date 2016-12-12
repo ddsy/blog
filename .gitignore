@@ -1,7 +1,11 @@
 /node_modules
 /public/storage
+<<<<<<< HEAD
 /vendor
 /.idea
 Homestead.json
 Homestead.yaml
 .env
+=======
+/.idea
+>>>>>>> 7454d322bcb67267d899f6531b1289114c9863d4

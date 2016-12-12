@@ -6,9 +6,13 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+<<<<<<< HEAD
         "laravel/framework": "5.3.*",
         "simpleenergy/php-webhdfs": "^1.0",
         "maatwebsite/excel": "^2.1"
+=======
+        "laravel/framework": "5.3.*"
+>>>>>>> 7454d322bcb67267d899f6531b1289114c9863d4
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

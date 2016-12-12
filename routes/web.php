@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 Route::get('/test',['uses'=>'TestController@test']);
+=======
+>>>>>>> 7454d322bcb67267d899f6531b1289114c9863d4
 
 
