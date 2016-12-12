@@ -1,0 +1,26 @@
+* Hostname 192.168.0.120 was found in DNS cache
+*   Trying 192.168.0.120...
+* Connected to 192.168.0.120 (192.168.0.120) port 50070 (#0)
+> PUT /webhdfs/v1/data/44.txt?op=CREATE HTTP/1.1
+Host: 192.168.0.120:50070
+Accept: */*
+Content-Length: 143
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------27607ddf0dc539c7
+
+< HTTP/1.1 100 Continue
+< HTTP/1.1 307 TEMPORARY_REDIRECT
+< Cache-Control: no-cache
+< Expires: Mon, 12 Dec 2016 04:11:06 GMT
+< Date: Mon, 12 Dec 2016 04:11:06 GMT
+< Pragma: no-cache
+< Expires: Mon, 12 Dec 2016 04:11:06 GMT
+< Date: Mon, 12 Dec 2016 04:11:06 GMT
+< Pragma: no-cache
+< Location: http://slave02:50075/webhdfs/v1/data/44.txt?op=CREATE&namenoderpcaddress=master:8020&overwrite=false
+< Content-Type: application/octet-stream
+< Content-Length: 0
+< Server: Jetty(6.1.26)
+* HTTP error before end of send, stop sending
+< 
+* Closing connection 0

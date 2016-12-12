@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "npm run clean && gulp --production",
+    "dev": "npm run clean && gulp watch",
+    "clean": "rimraf public/css public/fonts public/img  public/js  public/build"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "css-loader": "^0.26.0",
+    "d3": "^4.4.0",
+    "element-ui": "^1.0.2",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.0",
+    "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-browsersync-official": "^1.0.0",
+    "laravel-elixir-browsersync2": "^0.1.0",
+    "laravel-elixir-vue-2": "^0.2.0",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "lodash": "^4.16.2",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "vue": "^2.0.1",
+    "vue-loader": "^9.8.0",
+    "vue-resource": "^1.0.3",
+    "vue-router": "^2.0.0",
+    "vuex": "^2.0.0"
+  }
+}
