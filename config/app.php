@@ -123,13 +123,9 @@ return [
     'log' => env('APP_LOG', 'single'),
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
-<<<<<<< HEAD
     'hdfs'=>[
         'host'=>'http://192.168.0.120:50070/webhdfs/v1/data/'
     ],
-=======
-
->>>>>>> 7454d322bcb67267d899f6531b1289114c9863d4
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -183,11 +179,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-<<<<<<< HEAD
         Maatwebsite\Excel\ExcelServiceProvider::class,
-=======
-
->>>>>>> 7454d322bcb67267d899f6531b1289114c9863d4
     ],
 
     /*
@@ -235,11 +227,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-<<<<<<< HEAD
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
-=======
-
->>>>>>> 7454d322bcb67267d899f6531b1289114c9863d4
     ],
 
 ];
