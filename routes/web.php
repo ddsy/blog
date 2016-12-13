@@ -15,3 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/test',['uses'=>'TestController@test']);
+Route::Any('/data/main',['uses'=>'DataUploadController@getFileupload']);
+Route::Any('/data/upload',['uses'=>'DataUploadController@uploadData']);
