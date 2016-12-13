@@ -1,11 +1,14 @@
 /node_modules
-/public/storage
-<<<<<<< HEAD
 /vendor
-/.idea
+/public/storage
+/public/build
+/public/css
+/public/fonts
+/public/json
+/public/img
+/public/js
+/public/assets
 Homestead.json
 Homestead.yaml
-.env
-=======
+composer.phar
 /.idea
->>>>>>> 7454d322bcb67267d899f6531b1289114c9863d4
