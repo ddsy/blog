@@ -96,7 +96,7 @@
             };
         },
         mounted() {
-            particlesJS('particles-js',
+            const cles = particlesJS('particles-js',
                 {
                     "particles": {
                         "number": {

@@ -54,16 +54,16 @@ elixir(mix => {
      * */
     if (!debug) {
         mix.version(['css/app.css', 'js/app.js']);
+    } else {
+        BrowserSync.init();
+        mix.BrowserSync({
+            files: ['app/**/*', 'publick/**/*', 'resources/views/**/*'],
+            proxy: 'http://0.0.0.0:8000/',  // apache或iis等代理地址
+            port: 3000,
+            notify: false,        // 刷新是否提示
+            watchTask: true,
+            open: 'external',
+            host: 'localhost',  // 本机ip, 这样其他设备才可实时看到更新
+        });
     }
-
-    BrowserSync.init();
-    mix.BrowserSync({
-        files: ['app/**/*', 'publick/**/*', 'resources/views/**/*'],
-        proxy: 'http://0.0.0.0:8000/',  // apache或iis等代理地址
-        port: 3000,
-        notify: false,        // 刷新是否提示
-        watchTask: true,
-        open: 'external',
-        host: 'localhost',  // 本机ip, 这样其他设备才可实时看到更新
-    });
 });
